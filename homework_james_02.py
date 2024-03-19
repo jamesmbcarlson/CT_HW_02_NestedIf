@@ -6,21 +6,21 @@
 
 place = input("Choose a place: forest or cave? ")
 
-if place == "forest":
-    action = input("climb a tree or cross a river? ")
-    if action == "climb a tree":
+if place == "forest":                                           # changed = to ==
+    action = input("climb a tree or cross a river? ")           # added space at end of prompt
+    if action == "climb a tree":                                # changed = to ==
         print("You found a bird's nest!")
-    elif action == "cross a river":
+    elif action == "cross a river":                             # changed = to ==
         print("You found a boat!")
     else:
         pass
-elif place == "cave":
+elif place == "cave":                                           # changed = to ==
     action = input("light a torch or proceed in the dark? ")
     if action == "light a torch":
         print("You find a hidden treasure!")
     elif action == "proceed in the dark":
         print("You fell down a pit! Oh the humanity!")
-    else:
+    else:                                                       # added else for other inputs
         pass
 else:
     pass
@@ -31,7 +31,7 @@ print()
 
 # get number of attendees and determine venue
 attendees = input("Enter number of attendees: ")
-venue = "large hall" if int(attendees) > 100 else "conference room"
+venue = "large hall" if int(attendees) > 100 else "conference room"     # type cast attendees variable as int
 print("Venue:", venue)
 
 # recommend audio visual equipment
